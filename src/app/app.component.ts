@@ -3,7 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { ExampleComponent as ngOnChangesExampleComponet } from './components/onChanges/example/example.component';
 import { ExampleComponent as ngOnInitExampleComponent } from './components/ngOnInit/example/example.component';
 import { ExampleComponent as ngDoCheckExampleComponent } from './components/ngDoCheck/example/example.component';
-import { ExampleComponent  as ngAfterContentInitExampleComponent} from "./components/ngAfterContentInit/example/example.component";
+import { ExampleComponent as ngAfterContentInitExampleComponent } from "./components/ngAfterContentInit/example/example.component";
+import { ParentComponent as AfterContentCheckedExample } from "./components/ngAfterContentChecked/parent/parent.component";
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,9 @@ import { ExampleComponent  as ngAfterContentInitExampleComponent} from "./compon
     ngOnChangesExampleComponet,
     ngOnInitExampleComponent,
     ngDoCheckExampleComponent,
-    ngAfterContentInitExampleComponent
-],
+    ngAfterContentInitExampleComponent,
+    AfterContentCheckedExample
+  ],
 })
 export class AppComponent {
   title = 'angular-component-lifecycles';
