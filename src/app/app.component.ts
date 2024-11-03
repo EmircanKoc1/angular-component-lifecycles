@@ -6,6 +6,7 @@ import { ExampleComponent as ngDoCheckExampleComponent } from './components/ngDo
 import { ExampleComponent as ngAfterContentInitExampleComponent } from "./components/ngAfterContentInit/example/example.component";
 import { ParentComponent as AfterContentCheckedExample } from "./components/ngAfterContentChecked/parent/parent.component";
 import { ExampleComponent as ngAfterViewInitExampleComponent } from './components/ngAfterViewInit/example/example.component';
+import { ExampleComponent as ngAfterviewCheckedExampleComponent } from './components/ngAfterViewChecked/example/example.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { ExampleComponent as ngAfterViewInitExampleComponent } from './component
     ngDoCheckExampleComponent,
     ngAfterContentInitExampleComponent,
     AfterContentCheckedExample,
-    ngAfterViewInitExampleComponent
+    ngAfterViewInitExampleComponent,
+    ngAfterviewCheckedExampleComponent
   ],
 })
 export class AppComponent {
